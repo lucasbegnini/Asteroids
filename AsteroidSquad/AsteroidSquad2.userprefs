@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Google Play Service\Conexao.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Dinamic\SelectArrow.cs" Line="5" Column="37" />
+      <File FileName="Assets\Scripts\CameraFollower.cs" Line="30" Column="1" />
+      <File FileName="Assets\AdjustPositionToScreen.cs" Line="33" Column="3" />
+      <File FileName="Assets\Scripts\Google Play Service\GUI\MainMenuGui.cs" Line="1" Column="1" />
+      <File FileName="Assets\GooglePlayGames\ISocialPlatform\PlayGamesPlatform.cs" Line="29" Column="36" />
+      <File FileName="Assets\Scripts\Google Play Service\Conexao.cs" Line="94" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

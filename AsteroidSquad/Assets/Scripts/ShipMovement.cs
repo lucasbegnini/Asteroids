@@ -8,13 +8,14 @@ public class ShipMovement : MonoBehaviour {
 	public float maxVelocity;
 	private Animator animRef;
 	public AudioSource sfx;
-	private int controlType;
+	private int controlType=1;
 	// Use this for initialization
 	void Start () {
-		sfx.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
+		try{sfx.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();}catch{}
 		animRef = GetComponent<Animator> ();
 		rigidbody2D.centerOfMass = new Vector2 (0, 0.05f);
-		controlType = GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl ();
+		try{controlType = GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl ();}catch{
+				}
 	}
 	
 	// Update is called once per frame

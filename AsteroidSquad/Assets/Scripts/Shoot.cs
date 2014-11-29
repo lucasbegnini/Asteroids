@@ -13,10 +13,10 @@ public class Shoot : MonoBehaviour {
 	public float offsetY;
 	private float nextFire = 0;
 	public int shootType;
-	private int controlType;
+	private int controlType=1;
 	// Use this for initialization
 	void Start () {
-		controlType = GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl ();
+		try{controlType = GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl ();}catch{}
 	}
 	
 	// Update is called once per frame

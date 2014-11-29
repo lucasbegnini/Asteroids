@@ -41,7 +41,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -50,42 +50,42 @@ TextureImporter:
     - name: naves_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 8
-        width: 36
-        height: 31
+        x: 0
+        y: 1
+        width: 65
+        height: 65
       alignment: 9
-      pivot: {x: .50000006, y: .171624526}
+      pivot: {x: .5, y: .386457831}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: naves_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 7
-        width: 27
-        height: 35
+        x: 65
+        y: 1
+        width: 65
+        height: 65
       alignment: 9
-      pivot: {x: .5, y: .297619134}
+      pivot: {x: .513357878, y: .386457831}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: naves_2
       rect:
         serializedVersion: 2
-        x: 112
-        y: 8
-        width: 37
-        height: 31
+        x: 130
+        y: 1
+        width: 65
+        height: 65
       alignment: 9
-      pivot: {x: .5, y: .363176912}
+      pivot: {x: .510018229, y: .379778862}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: naves_3
       rect:
         serializedVersion: 2
-        x: 168
-        y: 6
-        width: 22
-        height: 40
-      alignment: 9
-      pivot: {x: .483620375, y: .166498095}
+        x: 195
+        y: 1
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

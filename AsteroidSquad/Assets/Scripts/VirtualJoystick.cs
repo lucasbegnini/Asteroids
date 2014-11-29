@@ -6,11 +6,11 @@ public class VirtualJoystick : MonoBehaviour {
 	public LayerMask whatIsButton;
 	private ShipMovement characterController;
 	private Shoot shoot;
-	private int controlType;
+	private int controlType=1;
 	void Start () {
 		characterController = GetComponent<ShipMovement> ();
 		shoot = GetComponent<Shoot> ();
-		controlType = GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl ();
+		try{controlType = GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl ();}catch{}
 	}
 
 	void FixedUpdate () {

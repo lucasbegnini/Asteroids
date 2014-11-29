@@ -50,8 +50,10 @@
      <Compile Include="Assets\AdjustPositionToScreen.cs" />
      <Compile Include="Assets\AdjustSizeByScreen.cs" />
      <Compile Include="Assets\ButtonController.cs" />
+     <Compile Include="Assets\CollideWithAsteroid.cs" />
      <Compile Include="Assets\Controlls.cs" />
      <Compile Include="Assets\DestroyByTime.cs" />
+     <Compile Include="Assets\Desviar.cs" />
      <Compile Include="Assets\GooglePlayGames\BasicApi\Achievement.cs" />
      <Compile Include="Assets\GooglePlayGames\BasicApi\DummyClient.cs" />
      <Compile Include="Assets\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
@@ -139,6 +141,8 @@
      <Compile Include="Assets\Scripts\returnScript.cs" />
      <Compile Include="Assets\Scripts\score\OrbPointController.cs" />
      <Compile Include="Assets\Scripts\score\scoreController.cs" />
+     <Compile Include="Assets\SerpentHead.cs" />
+     <Compile Include="Assets\SerpentMovement.cs" />
      <Compile Include="Assets\SetControls.cs" />
      <Compile Include="Assets\SlideController.cs" />
      <Compile Include="Assets\UniChord\Extra class\UniChordMessageReceiver.cs" />

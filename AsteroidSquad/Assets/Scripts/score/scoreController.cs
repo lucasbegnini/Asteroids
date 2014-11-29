@@ -15,7 +15,7 @@ public class scoreController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		score = Mathf.MoveTowards (score, preScore, Time.deltaTime*10);
-		gameObject.GetComponent<TextMesh> ().text = Mathf.FloorToInt(score)+"";
+		gameObject.GetComponent<GUIText> ().text = Mathf.FloorToInt(score)+"";
 		PlayerPrefs.SetFloat ("your score", preScore);
 		if (preScore > bestScore) {
 			bestScore = preScore;
@@ -35,6 +35,6 @@ public class scoreController : MonoBehaviour {
 	}
 
 	public void SetTextScore(){
-		GetComponent<TextMesh>().text = "Seus pontos " + preScore + "\nRecorde " + bestScore + "";
+		GetComponent<GUIText>().text = "Seus pontos " + preScore + "\nRecorde " + bestScore + "";
 	}
 }

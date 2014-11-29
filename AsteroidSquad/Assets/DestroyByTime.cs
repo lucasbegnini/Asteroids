@@ -5,7 +5,7 @@ public class DestroyByTime : MonoBehaviour {
 	public float time;
 	// Use this for initialization
 	void Start () {
-		audio.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
+		try{audio.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();}catch{}
 		Invoke ("DestroyNow", time);
 	}
 	

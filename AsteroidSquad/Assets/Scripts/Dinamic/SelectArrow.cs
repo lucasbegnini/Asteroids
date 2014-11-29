@@ -16,10 +16,13 @@ public class SelectArrow : Button {
 		Enter ();
 		animRef = GetComponent<Animator> ();
 		cameraTrans = Camera.main.transform;
+		sound.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
+		audio.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
 
 	}
 
 	void OnMouseUpAsButton(){
+
 		sound.Play ();
 		Up ();
 		Move ();

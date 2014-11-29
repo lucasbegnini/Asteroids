@@ -1,6 +1,16 @@
 fileFormatVersion: 2
 guid: 7c2ad1fd2039de74fada00b85d8124f9
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: explusaometeoro_0
+    21300002: explusaometeoro_1
+    21300004: explusaometeoro_2
+    21300006: explusaometeoro_3
+    21300008: explusaometeoro_4
+    21300010: explusaometeoro_5
+    21300012: explusaometeoro_6
+    21300014: explusaometeoro_7
+    21300016: explusaometeoro_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

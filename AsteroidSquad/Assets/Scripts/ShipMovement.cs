@@ -8,30 +8,37 @@ public class ShipMovement : MonoBehaviour {
 	public float maxVelocity;
 	private Animator animRef;
 	public AudioSource sfx;
-
+	private int controlType;
 	// Use this for initialization
 	void Start () {
+		sfx.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
 		animRef = GetComponent<Animator> ();
 		rigidbody2D.centerOfMass = new Vector2 (0, 0.05f);
+		controlType = GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.LeftArrow)) {
-			MoveLeft();	
-		} else if (Input.GetKey (KeyCode.RightArrow)) {
-			MoveRight();	
-		}else{
-			rigidbody2D.angularVelocity = 0;
+		if (controlType == 1) {
+			if (Input.GetKey (KeyCode.LeftArrow)) {
+				MoveLeft();	
+			} else if (Input.GetKey (KeyCode.RightArrow)) {
+				MoveRight();	
+			}else{
+				rigidbody2D.angularVelocity = 0;
+			}
+			//Debug.Log (Mathf.Abs((rigidbody2D.rotation + 360)%360));
+			if (Input.GetKey (KeyCode.UpArrow)) {
+				Thrust();
+				animRef.SetBool("acelerando",true);
+			}
+			else if(Input.touchCount <= 0){
+				animRef.SetBool("acelerando",false);
+			}
+		}else if(controlType == 2){
+			rigidbody2D.angularVelocity = Input.acceleration.y;
 		}
-		//Debug.Log (Mathf.Abs((rigidbody2D.rotation + 360)%360));
-		if (Input.GetKey (KeyCode.UpArrow)) {
-			Thrust();
-			animRef.SetBool("acelerando",true);
-		}
-		else if(Input.touchCount <= 0){
-			animRef.SetBool("acelerando",false);
-		}
+
 	}
 
 	public void MoveLeft(){

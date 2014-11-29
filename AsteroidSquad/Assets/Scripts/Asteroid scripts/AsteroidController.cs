@@ -40,7 +40,7 @@ public class AsteroidController : MonoBehaviour {
 	}
 
 	void Die(){
-		Debug.Log(sfx.clip.name);
+		sfx.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
 		sfx.Play ();
 		GameObject.Destroy (gameObject);
 	}

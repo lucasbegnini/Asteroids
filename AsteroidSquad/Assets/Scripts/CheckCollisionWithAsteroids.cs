@@ -24,6 +24,7 @@ public class CheckCollisionWithAsteroids : MonoBehaviour {
 	}
 
 	void die(){
+		sfx.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
 		sfx.Play ();
 		GameObject [] points = GameObject.FindGameObjectsWithTag("orb");
 		foreach(GameObject p in points){

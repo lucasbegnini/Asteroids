@@ -16,7 +16,7 @@ public class BulletController : MonoBehaviour {
 	}
 
 	void Start () {
-
+		audio.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
 	}
 
 	void Update () {

@@ -1,6 +1,15 @@
 fileFormatVersion: 2
 guid: a891f20c80614d84385288dba846c1d6
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: explosao2_263x251_0
+    21300002: explosao2_263x251_1
+    21300004: explosao2_263x251_2
+    21300006: explosao2_263x251_3
+    21300008: explosao2_263x251_4
+    21300010: explosao2_263x251_5
+    21300012: explosao2_263x251_6
+    21300014: explosao2_263x251_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

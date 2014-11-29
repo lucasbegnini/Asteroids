@@ -7,6 +7,7 @@ public class SceeneChangerButton : Button {
 	void OnMouseUpAsButton(){
 		Up ();
 		ExiteAll ();
+		sound.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
 		sound.Play ();
 		Invoke("Respond",1f);
 	}

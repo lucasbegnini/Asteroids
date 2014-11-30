@@ -10,7 +10,7 @@ public class GameStarter : MonoBehaviour {
 	public Sprite[] personagens;
 
 	void Awake () {
-		Instantiate (naves [SelectArrow.nave]);
+		//Instantiate (naves [SelectArrow.nave]);
 		personagem.sprite = personagens [SelectArrow.nave];
 	}
 
@@ -27,8 +27,8 @@ public class GameStarter : MonoBehaviour {
 	void CheckForInput(){
 		if(Input.GetMouseButtonDown(0)){
 			audio.Play();
-			naveAtual.transform.position = new Vector3 (0,0,0);//(mousePos.x,mousePos.y,naveAtual.transform.position.z);
-			ActiveShip();
+		//	naveAtual.transform.position = new Vector3 (0,0,0);//(mousePos.x,mousePos.y,naveAtual.transform.position.z);
+		//	ActiveShip();
 		}
 	}
 

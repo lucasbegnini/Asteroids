@@ -29,15 +29,17 @@ public class CheckCollisionWithAsteroids : MonoBehaviour {
 		foreach(GameObject p in points){
 			GameObject.Destroy(p);
 		}
-		Camera.main.GetComponent<CameraFollower> ().shake (5, 0.2f, 0.8f);
 		gameObject.GetComponent<Animator>().SetTrigger( "explodir" );
-		rigidbody2D.velocity = Vector2.zero;
-		rigidbody2D.rotation = 0;
-		rigidbody2D.isKinematic = true;
-		GetComponent<Shoot>().enabled = false;
-		GetComponent<ShipMovement>().enabled = false;
-		GetComponent<VirtualJoystick>().enabled = false;
-		GetComponent<PolygonCollider2D> ().enabled = false;
+		PhotonNetwork.DestroyAll ();
+		Camera.main.GetComponent<CameraFollower> ().shake (5, 0.2f, 0.8f);
+
+//		rigidbody2D.velocity = Vector2.zero;
+//		rigidbody2D.rotation = 0;
+//		rigidbody2D.isKinematic = true;
+//		GetComponent<Shoot>().enabled = false;
+//		GetComponent<ShipMovement>().enabled = false;
+//		GetComponent<VirtualJoystick>().enabled = false;
+//		GetComponent<PolygonCollider2D> ().enabled = false;
 	}
 	
 	void GoGameOver()

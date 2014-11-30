@@ -17,9 +17,10 @@ public class ShipMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.LeftArrow)) {
+		if (Input.GetKey(KeyCode.LeftArrow)) {
 			MoveLeft();	
-		} else if (Input.GetKey (KeyCode.RightArrow)) {
+
+		} else if (Input.GetKey(KeyCode.RightArrow)) {
 			MoveRight();	
 		}else{
 			rigidbody2D.angularVelocity = 0;

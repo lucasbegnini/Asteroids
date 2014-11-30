@@ -1,6 +1,17 @@
 fileFormatVersion: 2
 guid: 018bfb5ad7033ea408c13865c956d238
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: explusao_0
+    21300002: explusao_1
+    21300004: explusao_2
+    21300006: explusao_3
+    21300008: explusao_4
+    21300010: explusao_5
+    21300012: explusao_6
+    21300014: explusao_7
+    21300016: explusao_8
+    21300018: explusao_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

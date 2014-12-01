@@ -5,7 +5,7 @@ public class OrbPointController : MonoBehaviour {
 	private scoreController scoreControllerRef;
 	private Vector3 playerPos;
 	GameObject player;
-	//public GameObject particle;
+	public GameObject particle;
 	private float time;
 	private float speed;
 	// Use this for initialization
@@ -35,9 +35,9 @@ public class OrbPointController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "Player") {
 			rigidbody2D.velocity = Vector2.zero;
-//			GameObject p = Instantiate(particle) as GameObject;
-//			p.transform.position = transform.position;
-//			p.transform.position -= Vector3.forward*20;
+			GameObject p = Instantiate(particle) as GameObject;
+			p.transform.position = transform.position;
+			p.transform.position -= Vector3.forward*20;
 			scoreControllerRef.AddToScore(1);
 			GameObject.Destroy(gameObject);
 

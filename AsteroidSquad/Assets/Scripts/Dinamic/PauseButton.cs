@@ -28,7 +28,7 @@ public class PauseButton : Button {
 		PausePlayer ();
 		PauseOthers ();
 		GameObject.Find ("pause menu").GetComponent<DinamicImage> ().Enter ();
-		GameObject.Find ("botoes").GetComponent<DinamicImage> ().Enter ();
+		try{GameObject.Find ("botoes").GetComponent<DinamicImage> ().Enter ();}catch{}
 	}
 
 	public void Despause(){
@@ -37,7 +37,7 @@ public class PauseButton : Button {
 		DesPausePlayers ();
 		DesPauseOthers ();
 
-		GameObject.Find ("botoes").GetComponent<DinamicImage> ().Exit ();
+		try{GameObject.Find ("botoes").GetComponent<DinamicImage> ().Exit ();}catch{}
 		GameObject.Find ("pause menu").GetComponent<DinamicImage> ().Exit ();
 	}
 

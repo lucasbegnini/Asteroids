@@ -10,7 +10,7 @@ public class Button : DinamicImage {
 	void Start () {
 		initPos = transform.position;
 		animRef = GetComponent<Animator> ();
-		try{audio.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();}catch{}
+		audio.volume = PlayerPrefs.GetFloat("SFXVolume");
 	}
 	
 	void Update () {

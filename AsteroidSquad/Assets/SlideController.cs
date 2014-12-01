@@ -15,7 +15,7 @@ public class SlideController : MonoBehaviour {
 		} else {
 			controller = GameObject.Find("SFX");
 		}
-		float posx = min + controller.GetComponent<Volume> ().GetVolume ()*(max-min);
+		float posx = min + PlayerPrefs.GetFloat("SFXVolume")*(max-min);
 		transform.position = new Vector3(posx, transform.position.y, transform.position.z);
 	}
 
@@ -23,7 +23,7 @@ public class SlideController : MonoBehaviour {
 	void Update () {
 		v = (transform.position.x - min)/(max - min);
 		v = Mathf.Round(v*100)/100;
-		controller.GetComponent<Volume> ().SetVolume (v);
+		PlayerPrefs.SetFloat ("SFXVolume", v);
 	}
 
 	void OnMouseDrag(){

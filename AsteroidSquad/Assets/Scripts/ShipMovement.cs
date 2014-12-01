@@ -11,20 +11,19 @@ public class ShipMovement : MonoBehaviour {
 	private int controlType=1;
 	// Use this for initialization
 	void Start () {
-		try{sfx.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();}catch{}
+		sfx.volume = PlayerPrefs.GetFloat("SFXVolume");
 		animRef = GetComponent<Animator> ();
 		rigidbody2D.centerOfMass = new Vector2 (0, 0.05f);
-		try{controlType = GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl ();}catch{
-				}
+		controlType = PlayerPrefs.GetInt("Controls");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (controlType == 1) {
 			if (Input.GetKey (KeyCode.LeftArrow)) {
-				MoveLeft();	
+				MoveLeft(1);	
 			} else if (Input.GetKey (KeyCode.RightArrow)) {
-				MoveRight();	
+				MoveRight(1);	
 			}else{
 				rigidbody2D.angularVelocity = 0;
 			}
@@ -37,18 +36,23 @@ public class ShipMovement : MonoBehaviour {
 				animRef.SetBool("acelerando",false);
 			}
 		}else if(controlType == 2){
-			rigidbody2D.angularVelocity = Input.acceleration.y;
+			//if(-Input.acceleration.x * rotation > maxRotation && -Input.acceleration.x * rotation < -maxRotation){
+				rigidbody2D.angularVelocity = Mathf.Round((-Input.acceleration.x * rotation)*10)/10;
+				Debug.Log(rigidbody2D.angularVelocity);
+			//}
 		}
 
 	}
 
-	public void MoveLeft(){
-		if(rigidbody2D.angularVelocity + rotation/10 < maxRotation)
-			rigidbody2D.angularVelocity += rotation/10;	
+	public void MoveLeft(float x){
+		if(rigidbody2D.angularVelocity + rotation/10 < maxRotation){
+			rigidbody2D.angularVelocity += x*rotation/10;	
+
+		}
 	}
-	public void MoveRight(){
+	public void MoveRight(float x){
 		if(rigidbody2D.angularVelocity - rotation/10 > -maxRotation)
-			rigidbody2D.angularVelocity -= rotation/10;
+			rigidbody2D.angularVelocity -= x*rotation/10;
 	}
 	public void Thrust(){
 		if (!sfx.isPlaying) {

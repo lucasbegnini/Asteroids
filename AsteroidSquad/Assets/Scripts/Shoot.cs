@@ -16,7 +16,7 @@ public class Shoot : MonoBehaviour {
 	private int controlType=1;
 	// Use this for initialization
 	void Start () {
-		try{controlType = GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl ();}catch{}
+		controlType = PlayerPrefs.GetInt("Controls");
 	}
 	
 	// Update is called once per frame

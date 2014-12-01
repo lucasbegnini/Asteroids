@@ -17,9 +17,9 @@ public class GameStarter : MonoBehaviour {
 	void Start(){
 		naveAtual = GameObject.FindGameObjectWithTag("Player");
 		GameObject.FindGameObjectWithTag("pauseButton").transform.position += Vector3.right*3;
-		try{if (GameObject.Find ("BGM").GetComponent<Controlls> ().GetControl () == 2) {
+		if (PlayerPrefs.GetInt("Controls") == 2) {
 			GameObject.Find ("botoes").SetActive(false);
-		}}catch{}
+		}
 	}
 
 	void FixedUpdate () {
@@ -29,8 +29,8 @@ public class GameStarter : MonoBehaviour {
 
 	void CheckForInput(){
 		if(Input.GetMouseButtonDown(0)){
-			try{audio.volume = GameObject.Find ("SFX").GetComponent<Volume> ().GetVolume ();
-				audio.Play();}catch{}
+			audio.volume = PlayerPrefs.GetFloat("SFXVolume");
+			audio.Play();
 			naveAtual.transform.position = new Vector3 (0,0,0);//(mousePos.x,mousePos.y,naveAtual.transform.position.z);
 			ActiveShip();
 		}

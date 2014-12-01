@@ -1,5 +1,6 @@
 ﻿<Properties>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Dinamic\SceeneChangerButton.cs">
     <Files>
@@ -24,6 +25,12 @@
       <File FileName="Assets\SlideController.cs" Line="26" Column="41" />
       <File FileName="Assets\Scripts\Shoot.cs" Line="19" Column="48" />
 >>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
+=======
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Jogos\Asteroids\AsteroidSquad\Assets\Scripts\Multiplayer\RandomMathmaker.cs">
+    <Files>
+      <File FileName="..\..\..\Jogos\Asteroids\AsteroidSquad\Assets\Scripts\Multiplayer\RandomMathmaker.cs" Line="19" Column="1" />
+>>>>>>> Lucas
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

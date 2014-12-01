@@ -15,12 +15,19 @@ public class CheckCollisionWithAsteroids : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.layer == 9) {
+			other.gameObject.GetComponent<AsteroidController>().TakeDamage(200);
 			GameObject.FindGameObjectWithTag("pauseButton").transform.position += Vector3.right*3;
 			GameObject.FindGameObjectWithTag("pauseButton").GetComponent<PauseButton>().enabled = false;
 			die();
 			GoGameOver();
 		}
-
+		if(other.gameObject.tag == "enemyBullet"){
+			GameObject.FindGameObjectWithTag("pauseButton").transform.position += Vector3.right*3;
+			GameObject.FindGameObjectWithTag("pauseButton").GetComponent<PauseButton>().enabled = false;
+			Destroy(other.gameObject);
+			die();
+			GoGameOver();
+		}
 	}
 
 	void die(){

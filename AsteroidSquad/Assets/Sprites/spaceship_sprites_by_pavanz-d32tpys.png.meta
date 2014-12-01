@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 47217dfe02ec7dd4aaa7878cf77555b4
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spaceship_sprites_by_pavanz-d32tpys_0
+    21300002: spaceship_sprites_by_pavanz-d32tpys_1
+    21300004: spaceship_sprites_by_pavanz-d32tpys_2
+    21300006: spaceship_sprites_by_pavanz-d32tpys_3
+    21300008: spaceship_sprites_by_pavanz-d32tpys_4
+    21300010: spaceship_sprites_by_pavanz-d32tpys_5
+    21300012: spaceship_sprites_by_pavanz-d32tpys_6
+    21300014: spaceship_sprites_by_pavanz-d32tpys_7
+    21300016: spaceship_sprites_by_pavanz-d32tpys_8
+    21300018: spaceship_sprites_by_pavanz-d32tpys_9
+    21300020: spaceship_sprites_by_pavanz-d32tpys_10
+    21300022: spaceship_sprites_by_pavanz-d32tpys_11
+    21300024: spaceship_sprites_by_pavanz-d32tpys_12
+    21300026: spaceship_sprites_by_pavanz-d32tpys_13
+    21300028: spaceship_sprites_by_pavanz-d32tpys_14
+    21300030: spaceship_sprites_by_pavanz-d32tpys_15
+    21300032: spaceship_sprites_by_pavanz-d32tpys_16
+    21300034: spaceship_sprites_by_pavanz-d32tpys_17
+    21300036: spaceship_sprites_by_pavanz-d32tpys_18
+    21300038: spaceship_sprites_by_pavanz-d32tpys_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spaceship_sprites_by_pavanz-d32tpys_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 160
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 155
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 152
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 146
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 112
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_6
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 107
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 104
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_8
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 98
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 64
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_11
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 59
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 56
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_13
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 50
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_15
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 16
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_16
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 11
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 8
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_18
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spaceship_sprites_by_pavanz-d32tpys_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

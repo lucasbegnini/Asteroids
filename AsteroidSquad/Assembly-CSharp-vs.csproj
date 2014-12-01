@@ -49,10 +49,15 @@
      <Compile Include="Assets\AdjustPositionRight.cs" />
      <Compile Include="Assets\AdjustPositionToScreen.cs" />
      <Compile Include="Assets\AdjustSizeByScreen.cs" />
+     <Compile Include="Assets\CheckCollisionWIthBullet.cs" />
      <Compile Include="Assets\CollideWithAsteroid.cs" />
+     <Compile Include="Assets\CollideWithBullet.cs" />
      <Compile Include="Assets\Controls.cs" />
      <Compile Include="Assets\DestroyByTime.cs" />
      <Compile Include="Assets\Desviar.cs" />
+     <Compile Include="Assets\DesviarMudandoDirecao.cs" />
+     <Compile Include="Assets\FollowPlayer.cs" />
+     <Compile Include="Assets\MoverEnemy.cs" />
      <Compile Include="Assets\Scripts\Asteroid scripts\AsteroidController.cs" />
      <Compile Include="Assets\Scripts\BulletController.cs" />
      <Compile Include="Assets\Scripts\CameraFollower.cs" />
@@ -84,7 +89,10 @@
      <Compile Include="Assets\Scripts\score\scoreController.cs" />
      <Compile Include="Assets\SerpentHead.cs" />
      <Compile Include="Assets\SerpentMovement.cs" />
+     <Compile Include="Assets\ShootByTime.cs" />
+     <Compile Include="Assets\ShootFourBullets.cs" />
      <Compile Include="Assets\SlideController.cs" />
+     <Compile Include="Assets\SpawnEnemies.cs" />
      <Compile Include="Assets\UniChord\Extra class\UniChordMessageReceiver.cs" />
      <Compile Include="Assets\UniChord\Extra class\UniChordPackedString.cs" />
      <Compile Include="Assets\UniChord\UniChordChannel.cs" />

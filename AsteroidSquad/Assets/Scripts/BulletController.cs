@@ -17,6 +17,7 @@ public class BulletController : MonoBehaviour {
 
 	void Start () {
 		try{audio.volume = PlayerPrefs.GetFloat("SFXVolume");}catch{}
+		audio.Play ();
 	}
 
 	void Update () {

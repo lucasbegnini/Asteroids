@@ -24,6 +24,7 @@ public class CheckCollisionWithAsteroids : MonoBehaviour {
 	}
 
 	void die(){
+		sfx.volume = PlayerPrefs.GetFloat("SFXVolume");
 		sfx.Play ();
 		GameObject [] points = GameObject.FindGameObjectsWithTag("orb");
 		foreach(GameObject p in points){
@@ -45,7 +46,7 @@ public class CheckCollisionWithAsteroids : MonoBehaviour {
 	void GoGameOver()
 	{
 		GameObject.Find ("game over").GetComponent<DinamicImage> ().Enter ();
-		GameObject.Find ("botoes").GetComponent<DinamicImage> ().Enter ();
+		try{GameObject.Find ("botoes").GetComponent<DinamicImage> ().Enter ();}catch{}
 		//GameObject.Find ("score").GetComponent<scoreController> ().SetTextScore ();
 		//GameObject.Find ("score").GetComponent<TextMesh> ().color = Color.black;
 		//GameObject.Find ("score").transform.position += Vector3.down * 0.9f;

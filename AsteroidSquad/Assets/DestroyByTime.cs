@@ -5,6 +5,7 @@ public class DestroyByTime : MonoBehaviour {
 	public float time;
 	// Use this for initialization
 	void Start () {
+		try{audio.volume = PlayerPrefs.GetFloat("SFXVolume");}catch{}
 		Invoke ("DestroyNow", time);
 	}
 	

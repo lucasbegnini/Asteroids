@@ -13,14 +13,15 @@ public class Shoot : MonoBehaviour {
 	public float offsetY;
 	private float nextFire = 0;
 	public int shootType;
+	private int controlType=1;
 	// Use this for initialization
 	void Start () {
-	
+		controlType = PlayerPrefs.GetInt("Controls");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.Space)) {
+		if (Input.GetKey (KeyCode.Space) && (controlType == 1)) {
 			shoot ();
 		}
 	}

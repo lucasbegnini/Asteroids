@@ -19,7 +19,11 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
+<<<<<<< HEAD
 	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+=======
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_4;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+>>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -49,8 +53,10 @@
      <Compile Include="Assets\AdjustPositionRight.cs" />
      <Compile Include="Assets\AdjustPositionToScreen.cs" />
      <Compile Include="Assets\AdjustSizeByScreen.cs" />
-     <Compile Include="Assets\ButtonController.cs" />
+     <Compile Include="Assets\CollideWithAsteroid.cs" />
+     <Compile Include="Assets\Controls.cs" />
      <Compile Include="Assets\DestroyByTime.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\GooglePlayGames\BasicApi\Achievement.cs" />
      <Compile Include="Assets\GooglePlayGames\BasicApi\DummyClient.cs" />
      <Compile Include="Assets\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
@@ -132,8 +138,10 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TestDontDestroyOnLoad.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
+=======
+     <Compile Include="Assets\Desviar.cs" />
+>>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
      <Compile Include="Assets\Scripts\Asteroid scripts\AsteroidController.cs" />
-     <Compile Include="Assets\Scripts\Asteroid scripts\CollisionChecker.cs" />
      <Compile Include="Assets\Scripts\BulletController.cs" />
      <Compile Include="Assets\Scripts\CameraFollower.cs" />
      <Compile Include="Assets\Scripts\CheckCollisionWithAsteroids.cs" />
@@ -145,37 +153,20 @@
      <Compile Include="Assets\Scripts\Dinamic\SceeneChangerButton.cs" />
      <Compile Include="Assets\Scripts\Dinamic\SelectArrow.cs" />
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
-     <Compile Include="Assets\Scripts\FollowMouseInput.cs" />
      <Compile Include="Assets\Scripts\GameStarter.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\BehaviorUtils.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\CaixadeEntrada.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\Conexao.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\Conquistas.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\EnviarConviteButton.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\GUI\BaseGui.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\GUI\IncomingInvitationGui.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\GUI\MainMenuGui.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\Google Play Conquistas.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\Google Play Login.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\Google Play Ranking.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\Google play inicilizar.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\Inicializar.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\InvitationManager.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\Google Play Service\Ranking.cs" />
      <Compile Include="Assets\Scripts\MenuStarter.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\MultiPlayerGame.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\NetworkCharacter.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\RandomMathmaker.cs" />
+=======
+>>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
      <Compile Include="Assets\Scripts\Pauseble.cs" />
-     <Compile Include="Assets\Scripts\PerfectPixel.cs" />
-     <Compile Include="Assets\Scripts\RadioAspect.cs" />
      <Compile Include="Assets\Scripts\SetVelocity.cs" />
      <Compile Include="Assets\Scripts\ShipMovement.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\SpawnAsteroids.cs" />
      <Compile Include="Assets\Scripts\StartLudus.cs" />
-     <Compile Include="Assets\Scripts\StartShoot.cs" />
      <Compile Include="Assets\Scripts\VerifyOutOfBounds.cs" />
      <Compile Include="Assets\Scripts\VerifyRange.cs" />
      <Compile Include="Assets\Scripts\VirtualJoystick.cs" />
@@ -185,6 +176,19 @@
      <Compile Include="Assets\Scripts\returnScript.cs" />
      <Compile Include="Assets\Scripts\score\OrbPointController.cs" />
      <Compile Include="Assets\Scripts\score\scoreController.cs" />
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\SerpentHead.cs" />
+     <Compile Include="Assets\SerpentMovement.cs" />
+     <Compile Include="Assets\SlideController.cs" />
+     <Compile Include="Assets\UniChord\Extra class\UniChordMessageReceiver.cs" />
+     <Compile Include="Assets\UniChord\Extra class\UniChordPackedString.cs" />
+     <Compile Include="Assets\UniChord\UniChordChannel.cs" />
+     <Compile Include="Assets\UniChord\UniChordChannelListener.cs" />
+     <Compile Include="Assets\UniChord\UniChordManager.cs" />
+     <Compile Include="Assets\UniChord\UniChordManagerListener.cs" />
+     <Compile Include="Assets\UniChord\UniChordManagerNetworkListener.cs" />
+>>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-be\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\common_strings.xml" />
@@ -205,7 +209,6 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-vi\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sl\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-te-rIN\common_strings.xml" />
-     <None Include="Assets\Editor\projsettings.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-gl-rES\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-eu-rES\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\wallet_secondary_text_holo_dark.xml" />
@@ -218,7 +221,6 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bn-rBD\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rIN\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\version.xml" />
-     <None Include="Assets\Editor\template-AndroidManifest.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bg\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ms-rMY\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hu\common_strings.xml" />
@@ -244,7 +246,6 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lt\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-am\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_signin_btn_text_dark.xml" />
-     <None Include="Assets\Editor\template-GPGSParams.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\admob_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lo-rLA\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mk-rMK\common_strings.xml" />
@@ -292,11 +293,8 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-si-rLK\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ru\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lv\common_strings.xml" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="GPGSUtils">
- <HintPath>C:/Users/Lucas Begnini/Documents/GitHub/Asteroids/AsteroidSquad/Assets/Plugins/GPGSUtils.dll</HintPath>
+ <HintPath>C:/Users/matheus.barbosa/Documents/asteroids/AsteroidSquad/Assets/Plugins/GPGSUtils.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>C:/Users/Lucas Begnini/Documents/GitHub/Asteroids/AsteroidSquad/Assets/Plugins/Photon3Unity3D.dll</HintPath>

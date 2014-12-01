@@ -26,6 +26,7 @@ public class Pauseble : MonoBehaviour {
 			GetComponent<ShipMovement>().enabled = false;
 			GetComponent<Shoot>().enabled = false;
 			GetComponent<Animator>().enabled = false;
+			GetComponent<VirtualJoystick>().enabled = false;
 		}
 	}
 
@@ -42,6 +43,7 @@ public class Pauseble : MonoBehaviour {
 			GetComponent<ShipMovement>().enabled = true;
 			GetComponent<Shoot>().enabled = true;
 			GetComponent<Animator>().enabled = true;
+			GetComponent<VirtualJoystick>().enabled = true;
 		}
 
 	}

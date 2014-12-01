@@ -50,9 +50,9 @@ TextureImporter:
     - name: persons_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 72
+        x: 12
+        y: 5
+        width: 43
         height: 56
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -60,30 +60,30 @@ TextureImporter:
     - name: persons_1
       rect:
         serializedVersion: 2
-        x: 72
-        y: 0
-        width: 78
-        height: 56
+        x: 63
+        y: 5
+        width: 50
+        height: 53
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: persons_2
       rect:
         serializedVersion: 2
-        x: 147
-        y: 0
-        width: 72
-        height: 56
+        x: 120
+        y: 6
+        width: 61
+        height: 49
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: persons_3
       rect:
         serializedVersion: 2
-        x: 216
-        y: 0
-        width: 72
-        height: 56
+        x: 189
+        y: 6
+        width: 49
+        height: 50
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

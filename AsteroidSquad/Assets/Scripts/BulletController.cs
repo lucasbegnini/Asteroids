@@ -18,25 +18,24 @@ public class BulletController : MonoBehaviour {
 	void Start () {
 		try{audio.volume = PlayerPrefs.GetFloat("SFXVolume");}catch{}
 		audio.Play ();
+		Physics2D.IgnoreLayerCollision (10, 10, true);
 	}
 
 	void Update () {
 	
 	}
 
-	void OnTriggerEnter2D(Collider2D coll){
-		if(coll.gameObject.layer == 9){
+	void OnCollisionEnter2D(Collision2D coll){
+		if(coll.gameObject.tag == "asteroid" || coll.gameObject.tag == "asteroid frag"){
 			coll.gameObject.GetComponent<AsteroidController>().TakeDamage(damage);
 			die ();
 			if(shakeOnHit)
 				Camera.main.GetComponent<CameraFollower> ().shake (10, 0.1f, 0.5f);
 			Instantiate(hitExplosion,transform.position,Quaternion.Euler(Vector3.zero));
 		}
-	}
-
-	void OnCollisionEnter2D(Collision2D c){
-		if(c.collider.gameObject.layer == 9){
-			c.collider.gameObject.GetComponent<AsteroidController>().TakeDamage(damage);
+		if (coll.gameObject.tag == "enemies") {
+			coll.gameObject.GetComponent<TakeDamage>().takeDamage(damage);
+			die ();
 			if(shakeOnHit)
 				Camera.main.GetComponent<CameraFollower> ().shake (10, 0.1f, 0.5f);
 			Instantiate(hitExplosion,transform.position,Quaternion.Euler(Vector3.zero));

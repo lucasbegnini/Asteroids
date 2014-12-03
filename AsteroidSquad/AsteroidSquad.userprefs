@@ -1,14 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BulletController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShootByTime.cs">
     <Files>
-      <File FileName="Assets\Scripts\BulletController.cs" Line="50" Column="1" />
-      <File FileName="Assets\Scripts\CheckCollisionWithAsteroids.cs" Line="60" Column="1" />
-      <File FileName="Assets\ShootFourBullets.cs" Line="38" Column="1" />
-      <File FileName="Assets\ShootByTime.cs" Line="36" Column="1" />
-      <File FileName="Assets\CollideWithAsteroid.cs" Line="12" Column="1" />
-      <File FileName="Assets\Scripts\Asteroid scripts\AsteroidController.cs" Line="88" Column="1" />
-      <File FileName="Assets\Desviar.cs" Line="31" Column="1" />
+      <File FileName="Assets\Scripts\ShootByTime.cs" Line="18" Column="3" />
+      <File FileName="Assets\naveGiganteController.cs" Line="10" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

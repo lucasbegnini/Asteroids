@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CheckCollisionWithAsteroids : MonoBehaviour {
 	public AudioSource sfx;
+	public int hitPoints; 
 	// Use this for initialization
 	void Start () {
 	
@@ -10,24 +11,38 @@ public class CheckCollisionWithAsteroids : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
-		if (other.gameObject.layer == 9) {
+	void OnCollisionEnter2D(Collision2D other) {
+		if (other.gameObject.tag == "asteroid" || other.gameObject.tag == "asteroid frag") {
 			other.gameObject.GetComponent<AsteroidController>().TakeDamage(200);
-			GameObject.FindGameObjectWithTag("pauseButton").transform.position += Vector3.right*3;
-			GameObject.FindGameObjectWithTag("pauseButton").GetComponent<PauseButton>().enabled = false;
-			die();
-			GoGameOver();
+			TakeDamage(25);
 		}
 		if(other.gameObject.tag == "enemyBullet"){
+			TakeDamage(other.gameObject.GetComponent<BulletController>().Damage);
+			Destroy(other.gameObject);
+		}
+	}
+
+	public void TakeDamage(int damage){
+		//GetComponent<PolygonCollider2D> ().enabled = false;
+		Physics2D.IgnoreLayerCollision (0, 9, true);
+		Invoke ("DeactiveCollider", 1.5f);
+		hitPoints -= Mathf.Abs (damage);
+		if(hitPoints<1){
+			die();
 			GameObject.FindGameObjectWithTag("pauseButton").transform.position += Vector3.right*3;
 			GameObject.FindGameObjectWithTag("pauseButton").GetComponent<PauseButton>().enabled = false;
-			Destroy(other.gameObject);
-			die();
 			GoGameOver();
+		}else{
+			GetComponent<Animator>().SetBool("takeDamage",true);
 		}
+	}
+
+	void DeactiveCollider(){
+		Physics2D.IgnoreLayerCollision (0, 9, false);
+		GetComponent<Animator>().SetBool("takeDamage",false);
 	}
 
 	void die(){

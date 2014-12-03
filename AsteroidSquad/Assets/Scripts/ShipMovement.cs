@@ -37,7 +37,7 @@ public class ShipMovement : MonoBehaviour {
 			}
 		}else if(controlType == 2){
 			//if(-Input.acceleration.x * rotation > maxRotation && -Input.acceleration.x * rotation < -maxRotation){
-				rigidbody2D.angularVelocity = Mathf.Round((-Input.acceleration.x * rotation)*10)/10;
+			rigidbody2D.angularVelocity = Mathf.Round((-Input.acceleration.x * rotation));//*10)/10;
 				Debug.Log(rigidbody2D.angularVelocity);
 			//}
 		}

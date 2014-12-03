@@ -54,6 +54,7 @@ public class Shoot : MonoBehaviour {
 		float dirx = BulletVelocity*Mathf.Cos(angle*Mathf.Deg2Rad);
 		float diry = BulletVelocity*Mathf.Sin(angle*Mathf.Deg2Rad);
 		NewBullet.rigidbody2D.velocity = new Vector2(dirx,diry) + rigidbody2D.velocity;
+		Physics2D.IgnoreCollision(NewBullet.collider2D, collider2D);
 	}
 
 	void ShootTwoParallelBullets(){
@@ -68,7 +69,7 @@ public class Shoot : MonoBehaviour {
 		float dirx = BulletVelocity*Mathf.Cos(angle*Mathf.Deg2Rad);
 		float diry = BulletVelocity*Mathf.Sin(angle*Mathf.Deg2Rad);
 		NewBullet.rigidbody2D.velocity = new Vector2(dirx,diry) + rigidbody2D.velocity;
-
+		Physics2D.IgnoreCollision(NewBullet.collider2D, collider2D);
 		angle = rigidbody2D.rotation + 90 + Random.Range(-angleVariation,angleVariation);
 		posX = transform.GetChild(1).transform.position.x;
 		posY = transform.GetChild(1).transform.position.y;
@@ -80,5 +81,6 @@ public class Shoot : MonoBehaviour {
 		dirx = BulletVelocity*Mathf.Cos(angle*Mathf.Deg2Rad);
 		diry = BulletVelocity*Mathf.Sin(angle*Mathf.Deg2Rad);
 		NewBullet.rigidbody2D.velocity = new Vector2(dirx,diry) + rigidbody2D.velocity;
+		Physics2D.IgnoreCollision(NewBullet.collider2D, collider2D);
 	}
 }

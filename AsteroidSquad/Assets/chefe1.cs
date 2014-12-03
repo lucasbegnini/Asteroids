@@ -24,7 +24,7 @@ public class chefe1 : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D c){
 		if (c.gameObject.tag == "Player") {
-			c.gameObject.GetComponent<CheckCollisionWithAsteroids>().TakeDamage(100);	
+			c.gameObject.GetComponent<CheckCollisionWithAsteroids>().TakeDamage(500);	
 		}
 	}
 }

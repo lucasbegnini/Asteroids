@@ -31,11 +31,11 @@ public class AsteroidController : MonoBehaviour {
 		}
 	}
 
-	public void TakeDamage(int damage){
+	public void TakeDamage(int damage, Collider2D c){
 		renderer.material.color = Color.red;
 		hitPoints -= Mathf.Abs (damage);
 		if(hitPoints<1){
-			Split (splitForce);
+			Split (splitForce, c);
 		}
 	}
 
@@ -45,7 +45,7 @@ public class AsteroidController : MonoBehaviour {
 		GameObject.Destroy (gameObject);
 	}
 
-	void Split(float force){
+	void Split(float force, Collider2D c){
 
 		int mod = 20;
 		if((tag == "asteroid")&&(!last)){
@@ -75,9 +75,11 @@ public class AsteroidController : MonoBehaviour {
 			frag2.rigidbody2D.AddForce(splitForce*force);
 		}
 		Instantiate (hitExplosion, transform.position, transform.rotation) ;
-		for(int i =0; i < numOfOrbs;i++){
-			GameObject orb = Instantiate (orbPoint, transform.position, transform.rotation)as GameObject ;
-			orb.rigidbody2D.AddForce(new Vector2(Random.Range(-1,1),Random.Range(-1,1))*100);
+		if(c.tag == "bullet"){
+			for(int i =0; i < numOfOrbs;i++){
+				GameObject orb = Instantiate (orbPoint, transform.position, transform.rotation)as GameObject ;
+				orb.rigidbody2D.AddForce(new Vector2(Random.Range(-1,1),Random.Range(-1,1))*100);
+			}
 		}
 		Camera.main.GetComponent<CameraFollower> ().shake (5, 0.1f, 0.8f);
 		Die ();

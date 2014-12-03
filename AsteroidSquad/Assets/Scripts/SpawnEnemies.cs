@@ -9,9 +9,19 @@ public class SpawnEnemies : MonoBehaviour {
 	public Transform RightEdge;
 	public Transform UpEdge;
 	public Transform DownEdge;
+	private GameStarter gamestarter;
+	private bool started=false;
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("Spawn", time, time);
+		gamestarter = GameObject.Find ("Main Camera").GetComponent<GameStarter> ();
+
+	}
+
+	void Update(){
+		if(gamestarter.started && !started){
+			InvokeRepeating ("Spawn", time, time);
+			started = true;
+		}
 	}
 	
 	// Update is called once per frame

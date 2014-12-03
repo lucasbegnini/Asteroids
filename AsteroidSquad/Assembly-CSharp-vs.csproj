@@ -46,6 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CollideWithBullet.cs" />
+     <Compile Include="Assets\Desviar.cs" />
+     <Compile Include="Assets\DesviarMudandoDirecao.cs" />
+     <Compile Include="Assets\FollowPlayer.cs" />
      <Compile Include="Assets\FollowPlayerAccel.cs" />
      <Compile Include="Assets\Scripts\AdjustPositionRight.cs" />
      <Compile Include="Assets\Scripts\AdjustPositionToScreen.cs" />
@@ -56,11 +60,8 @@
      <Compile Include="Assets\Scripts\CheckCollisionWIthBullet.cs" />
      <Compile Include="Assets\Scripts\CheckCollisionWithAsteroids.cs" />
      <Compile Include="Assets\Scripts\CollideWithAsteroid.cs" />
-     <Compile Include="Assets\Scripts\CollideWithBullet.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
      <Compile Include="Assets\Scripts\DestroyByTime.cs" />
-     <Compile Include="Assets\Scripts\Desviar.cs" />
-     <Compile Include="Assets\Scripts\DesviarMudandoDirecao.cs" />
      <Compile Include="Assets\Scripts\Dinamic\Button.cs" />
      <Compile Include="Assets\Scripts\Dinamic\DinamicImage.cs" />
      <Compile Include="Assets\Scripts\Dinamic\DinamicImageWithScale.cs" />
@@ -69,7 +70,6 @@
      <Compile Include="Assets\Scripts\Dinamic\SceeneChangerButton.cs" />
      <Compile Include="Assets\Scripts\Dinamic\SelectArrow.cs" />
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
-     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\GameStarter.cs" />
      <Compile Include="Assets\Scripts\MenuStarter.cs" />
      <Compile Include="Assets\Scripts\MoverEnemy.cs" />
@@ -105,6 +105,8 @@
      <Compile Include="Assets\UniChord\UniChordManagerNetworkListener.cs" />
      <Compile Include="Assets\chefe1.cs" />
      <Compile Include="Assets\naveGiganteController.cs" />
+     <Compile Include="Assets\snake.cs" />
+     <Compile Include="Assets\spawnBoss.cs" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-be\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\common_strings.xml" />

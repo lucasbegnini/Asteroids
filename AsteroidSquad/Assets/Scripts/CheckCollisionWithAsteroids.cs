@@ -16,8 +16,8 @@ public class CheckCollisionWithAsteroids : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other) {
 		if (other.gameObject.tag == "asteroid" || other.gameObject.tag == "asteroid frag") {
-			other.gameObject.GetComponent<AsteroidController>().TakeDamage(200);
-			TakeDamage(25);
+			other.gameObject.GetComponent<AsteroidController>().TakeDamage(200, other.collider);
+			TakeDamage(45);
 		}
 		if(other.gameObject.tag == "enemyBullet"){
 			TakeDamage(other.gameObject.GetComponent<BulletController>().Damage);

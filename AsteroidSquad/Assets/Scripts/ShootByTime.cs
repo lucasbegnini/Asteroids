@@ -8,6 +8,7 @@ public class ShootByTime : MonoBehaviour {
 	public float BulletVelocity;
 	public float bulletOffset;
 	public bool canShoot=false;
+	public int damage;
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("Shoot", fireRate, fireRate);
@@ -26,7 +27,7 @@ public class ShootByTime : MonoBehaviour {
 			GameObject NewBullet = Instantiate(shoot, position, rotation) as GameObject;
 			NewBullet.transform.position += Vector3.forward;
 			NewBullet.GetComponent<VerifyRange> ().setRange (3);
-			NewBullet.GetComponent<BulletController> ().Damage = 5;
+			NewBullet.GetComponent<BulletController> ().Damage = damage;
 			NewBullet.rigidbody2D.rotation -= 90;
 			float dirx = BulletVelocity*Mathf.Cos(angle*Mathf.Deg2Rad);
 			float diry = BulletVelocity*Mathf.Sin(angle*Mathf.Deg2Rad);

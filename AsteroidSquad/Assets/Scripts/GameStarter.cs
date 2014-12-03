@@ -8,7 +8,7 @@ public class GameStarter : MonoBehaviour {
 	public SpriteRenderer personagem;
 	private Vector2 mousePos;
 	public Sprite[] personagens;
-
+	public bool started=false;
 	void Awake () {
 		Instantiate (naves [SelectArrow.nave]);
 		personagem.sprite = personagens [SelectArrow.nave];
@@ -29,6 +29,7 @@ public class GameStarter : MonoBehaviour {
 
 	void CheckForInput(){
 		if(Input.GetMouseButtonDown(0)){
+			started = true;
 			audio.volume = PlayerPrefs.GetFloat("SFXVolume");
 			audio.Play();
 			naveAtual.transform.position = new Vector3 (0,0,0);//(mousePos.x,mousePos.y,naveAtual.transform.position.z);

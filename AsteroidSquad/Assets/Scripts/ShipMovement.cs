@@ -19,47 +19,28 @@ public class ShipMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-<<<<<<< HEAD
-		if (Input.GetKey(KeyCode.LeftArrow)) {
-			MoveLeft();	
-
-		} else if (Input.GetKey(KeyCode.RightArrow)) {
-			MoveRight();	
-		}else{
-			rigidbody2D.angularVelocity = 0;
-		}
-		//Debug.Log (Mathf.Abs((rigidbody2D.rotation + 360)%360));
-		if (Input.GetKey (KeyCode.UpArrow)) {
-			Thrust();
-			animRef.SetBool("acelerando",true);
-		}
-		else if(Input.touchCount <= 0){
-			animRef.SetBool("acelerando",false);
-=======
 		if (controlType == 1) {
 			if (Input.GetKey (KeyCode.LeftArrow)) {
-				MoveLeft(1);	
+				MoveLeft (1);	
 			} else if (Input.GetKey (KeyCode.RightArrow)) {
-				MoveRight(1);	
-			}else{
+				MoveRight (1);	
+			} else {
 				rigidbody2D.angularVelocity = 0;
 			}
 			//Debug.Log (Mathf.Abs((rigidbody2D.rotation + 360)%360));
 			if (Input.GetKey (KeyCode.UpArrow)) {
-				Thrust();
-				animRef.SetBool("acelerando",true);
+				Thrust ();
+				animRef.SetBool ("acelerando", true);
+			} else if (Input.touchCount <= 0) {
+				animRef.SetBool ("acelerando", false);
 			}
-			else if(Input.touchCount <= 0){
-				animRef.SetBool("acelerando",false);
+			else if (controlType == 2) {
+				//if(-Input.acceleration.x * rotation > maxRotation && -Input.acceleration.x * rotation < -maxRotation){
+				rigidbody2D.angularVelocity = Mathf.Round ((-Input.acceleration.x * rotation) * 10) / 10;
+				Debug.Log (rigidbody2D.angularVelocity);
+				//}
 			}
-		}else if(controlType == 2){
-			//if(-Input.acceleration.x * rotation > maxRotation && -Input.acceleration.x * rotation < -maxRotation){
-				rigidbody2D.angularVelocity = Mathf.Round((-Input.acceleration.x * rotation)*10)/10;
-				Debug.Log(rigidbody2D.angularVelocity);
-			//}
->>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
 		}
-
 	}
 
 	public void MoveLeft(float x){

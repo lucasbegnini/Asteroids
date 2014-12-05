@@ -19,11 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-<<<<<<< HEAD
-	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
-=======
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_4;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
->>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_4;UNITY_4_5;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -50,49 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AdjustPositionRight.cs" />
-     <Compile Include="Assets\AdjustPositionToScreen.cs" />
-     <Compile Include="Assets\AdjustSizeByScreen.cs" />
      <Compile Include="Assets\CollideWithAsteroid.cs" />
-     <Compile Include="Assets\Controls.cs" />
-     <Compile Include="Assets\DestroyByTime.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Achievement.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\DummyClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\IRealTimeMultiplayerClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\ITurnBasedMultiplayerClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\MatchOutcome.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Participant.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Player.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\RealTimeMultiplayerListener.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\TurnBasedMatch.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\OnStateLoadedListener.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesAchievement.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesLocalUser.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesPlatform.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesScore.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesUserProfile.cs" />
-     <Compile Include="Assets\GooglePlayGames\OurUtils\Logger.cs" />
-     <Compile Include="Assets\GooglePlayGames\OurUtils\Misc.cs" />
-     <Compile Include="Assets\GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\AchievementBank.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidRtmpClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidTbmpClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\GameHelperManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\JavaConsts.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\JavaUtil.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\NoopProxy.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\OnStateResultProxy.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\IOSClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\IOSRtmpClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\MiniJSON.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\iOSTbmpClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
+     <Compile Include="Assets\Desviar.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
@@ -138,9 +93,6 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TestDontDestroyOnLoad.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
-=======
-     <Compile Include="Assets\Desviar.cs" />
->>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
      <Compile Include="Assets\Scripts\Asteroid scripts\AsteroidController.cs" />
      <Compile Include="Assets\Scripts\BulletController.cs" />
      <Compile Include="Assets\Scripts\CameraFollower.cs" />
@@ -155,12 +107,8 @@
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\GameStarter.cs" />
      <Compile Include="Assets\Scripts\MenuStarter.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\MultiPlayerGame.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\NetworkCharacter.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\RandomMathmaker.cs" />
-=======
->>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
      <Compile Include="Assets\Scripts\Pauseble.cs" />
      <Compile Include="Assets\Scripts\SetVelocity.cs" />
      <Compile Include="Assets\Scripts\ShipMovement.cs" />
@@ -176,19 +124,6 @@
      <Compile Include="Assets\Scripts\returnScript.cs" />
      <Compile Include="Assets\Scripts\score\OrbPointController.cs" />
      <Compile Include="Assets\Scripts\score\scoreController.cs" />
-<<<<<<< HEAD
-=======
-     <Compile Include="Assets\SerpentHead.cs" />
-     <Compile Include="Assets\SerpentMovement.cs" />
-     <Compile Include="Assets\SlideController.cs" />
-     <Compile Include="Assets\UniChord\Extra class\UniChordMessageReceiver.cs" />
-     <Compile Include="Assets\UniChord\Extra class\UniChordPackedString.cs" />
-     <Compile Include="Assets\UniChord\UniChordChannel.cs" />
-     <Compile Include="Assets\UniChord\UniChordChannelListener.cs" />
-     <Compile Include="Assets\UniChord\UniChordManager.cs" />
-     <Compile Include="Assets\UniChord\UniChordManagerListener.cs" />
-     <Compile Include="Assets\UniChord\UniChordManagerNetworkListener.cs" />
->>>>>>> ed3a1afdb752202e18b726b533528f6951e5c03d
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-be\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\common_strings.xml" />
@@ -297,7 +232,7 @@
  <HintPath>C:/Users/matheus.barbosa/Documents/asteroids/AsteroidSquad/Assets/Plugins/GPGSUtils.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/Lucas Begnini/Documents/GitHub/Asteroids/AsteroidSquad/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/matheus.barbosa/Documents/asteroids/AsteroidSquad/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

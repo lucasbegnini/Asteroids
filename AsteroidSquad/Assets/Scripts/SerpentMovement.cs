@@ -2,29 +2,33 @@
 using System.Collections;
 
 public class SerpentMovement : MonoBehaviour {
-	public Transform Target;
-	public float Distance;
+	public SerpentMovement Target;
+	public int MaxDistance;
+	private int distance=0;
 	private Vector2 Direction;
 	public float velocity;
 	public float angular;
 	public float angularVariation;
+	public float multi;
 	private GameObject player;
+	private Vector3 posicao;
+	public Vector3[] posicoes;
+	public bool follow;
 	// Use this for initialization
 	void Start () {
+		posicoes = new Vector3[MaxDistance];
+		for(int i =0;i<MaxDistance;i++){
+			posicoes[i] = transform.position;
+		}
 		Physics2D.IgnoreLayerCollision (11, 11, true);
 		player = GameObject.FindGameObjectWithTag ("Player");
 		rigidbody2D.angularVelocity = angular;
 	}
-
-
+	
+	
 	void FixedUpdate () {
-		if (Target != null) {
-			Direction = Target.position;
-			Vector3 target = Direction - rigidbody2D.position;
-			float angle = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
-			transform.rotation = Quaternion.Lerp(transform.rotation,Quaternion.AngleAxis(angle, Vector3.forward),Time.deltaTime);
-			rigidbody2D.velocity = (Direction - rigidbody2D.position)/Distance;
-			rigidbody2D.rotation = Target.parent.rigidbody2D.rotation;
+		if (follow) {			
+			transform.position = Target.posicaoAnterior(MaxDistance-1);
 		}else{
 			float angle = rigidbody2D.rotation;
 			float dirx = velocity*Mathf.Cos(angle*Mathf.Deg2Rad)/100;
@@ -39,5 +43,14 @@ public class SerpentMovement : MonoBehaviour {
 				rigidbody2D.angularVelocity = -angular;
 			}
 		}
+		for(int i=MaxDistance-1;i>0;i--){
+			posicoes[i] = posicoes[i-1];
+		}
+		posicoes [0] = transform.position;
 	}
+
+	public Vector3 posicaoAnterior(int index){
+		return posicoes[index];
+	}
+
 }

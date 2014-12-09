@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SerpentMovement.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\AsteroidSquad\Assets\Scripts\SerpentMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\SerpentMovement.cs" Line="30" Column="19" />
+      <File FileName="..\..\AsteroidSquad\Assets\Scripts\SerpentMovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
